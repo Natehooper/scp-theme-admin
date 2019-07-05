@@ -73,6 +73,7 @@
     port.$dirty = false;
     port.setDirty = setDirty;
     port.$setPristine = $setPristine;
+    port.$clearEntities = $clearEntities;
     port.data = data;
     port.fromExisting = fromExisting;
 
@@ -142,6 +143,11 @@
       _.setContents(port.entitiesOriginal, response);
 
       syncEntityFilter();
+    }
+
+    function $clearEntities() {
+      alert("WHO");
+      port.entities.selected = [];
     }
 
     function syncEntityFilter() {
@@ -231,7 +237,7 @@
         port.entitiesOriginal,
         port.entities.selected
       );
-      port.$dirty = 
+      port.$dirty =
         port.switch.port.$dirty =
         port.switch.speed.$dirty =
         port.entities.$dirty =
@@ -245,4 +251,3 @@
     }
   }
 })();
-
