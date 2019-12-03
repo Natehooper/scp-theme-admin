@@ -70,7 +70,10 @@
     "layer": {
       "LABEL": "Layer",
       "Rack": "Rack",
-      "Distribution": "Distribution"
+      "Distribution": "Distribution",
+      "distribution_switches": {
+        "LABEL": "Distribution Switches"
+      }
     },
     "group": {
       "LABEL": "IP Groups",
@@ -83,6 +86,9 @@
       },
       "snmp_use_32_bit": {
         "LABEL": "Use 32-bit SNMP data (less accurate, but the only option on some switches)"
+      },
+      "layer_three": {
+        "LABEL": "Layer 3 Switch (Runs layer 3 commands when any switch commands are run)"
       },
       "snmp_version": {
         "LABEL": "SNMP Version",
