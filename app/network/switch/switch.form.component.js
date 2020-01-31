@@ -95,7 +95,7 @@
       switchForm.layer3 = switchForm.input.function === FUNCTION.LAYER_3;
     }
 
-    function loadUplinks() {
+    function loadUplinks() { //TODO TODOCURRENT
       return Api.all('switch/'+switchForm.form.input.id+'/uplink')
         .getList()
         .then(storeUplinks)
